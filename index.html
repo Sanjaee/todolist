@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rak Buku</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>Aplikasi Pengelolaan Data Menggunakan DOM dan Web Storage</h1>
+    <div class="form-container">
+      <label class="kt" for="todoInput">Judul Buku:</label>
+      <input type="text" id="todoInput" placeholder="Tambahkan Buku..." />
+      <label class="kt" for="authorInput">Penulis Buku:</label>
+      <input type="text" id="authorInput" placeholder="Tambahkan penulis..." />
+      <label class="kt" for="yearInput">Tahun Buku:</label>
+      <input type="number" id="yearInput" placeholder="Tambahkan tahun..." />
+      <button onclick="addTodo()">Tambah</button>
+    </div>
+
+    <h2 class="ls">Belum Dibaca</h2>
+    <div class="lu" id="todoListNotRead" class="todo-list"></div>
+
+    <h2 class="ls">Sudah Dibaca</h2>
+    <div class="lu" id="todoListRead" class="todo-list hidden"></div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
